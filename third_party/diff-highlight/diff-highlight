@@ -7,13 +7,13 @@ use strict;
 # Highlight by reversing foreground and background. You could do
 # other things like bold or underline if you prefer.
 my @OLD_HIGHLIGHT = (
-	color_config('color.diff-highlight.oldnormal', "\x1b[1;37;41m"),
-	color_config('color.diff-highlight.oldhighlight', "\x1b[1;5;37;41m"),
+	color_config('color.diff-highlight.oldnormal', "\x1b[97;101m"),
+	color_config('color.diff-highlight.oldhighlight', "\x1b[97;41m"),
 	color_config('color.diff-highlight.oldreset', "\x1b[27m")
 );
 my @NEW_HIGHLIGHT = (
-	color_config('color.diff-highlight.newnormal', "\x1b[1;37;42m"),
-	color_config('color.diff-highlight.newhighlight', "\x1b[5;30;42m"),
+	color_config('color.diff-highlight.newnormal', "\x1b[97;102m"),
+	color_config('color.diff-highlight.newhighlight', "\x1b[97;42m"),
 	color_config('color.diff-highlight.newreset', $OLD_HIGHLIGHT[2])
 );
 

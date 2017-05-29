@@ -220,7 +220,7 @@ sub mark_empty_line {
 
 	if ($line =~ m/^$ansi_color_regex([+-])$reset_color_regex_pattern\s*$/) {
 		my $is_new_line = $4 eq "+";
-		my $bg_color = $is_new_line ? "\e[5;42;30;1m" : "\e[5;43;30;1m";
+		my $bg_color = $is_new_line ? "\e[97;102m" : "\e[97;103m";
 		my $line_width = get_line_width();
 		my $text = $is_new_line ? "+++ empty line added +++" : "~~~ empty line removed ~~~";
 		my $text_len = length($text);
